@@ -41,7 +41,6 @@ class Solution {
     }
     public int findInMountainArray(int target, MountainArray mountainArr) {
         int peakIndex = findPeakIndex(mountainArr);
-        System.out.println(peakIndex);
         int ans1 = srcLeft(mountainArr,target,0,peakIndex);
         if(ans1 != -1) return ans1;
         else return srcRight(mountainArr,target,peakIndex+1,mountainArr.length()-1);
