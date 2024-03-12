@@ -17,25 +17,21 @@ class Solution {
                 newHead.next = list2;
                 newHead = newHead.next;
                 list2 = list2.next;
-                System.out.print("l2 ");
             }
             else if(list2 == null){
                 newHead.next = list1;
                 newHead = newHead.next;
                 list1 = list1.next;
-                System.out.print("l1 ");
             }
             else{
                 if(list1.val<=list2.val){
                     newHead.next = list1;
                     newHead = newHead.next;
                     list1 = list1.next;
-                    System.out.print("l1 ");
                 }else{
                     newHead.next = list2;
                     newHead = newHead.next;
-                    list2 = list2.next;
-                    System.out.print("l2 ");    
+                    list2 = list2.next; 
                 }
             }
         }
